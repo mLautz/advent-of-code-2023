@@ -1,9 +1,9 @@
 use std::fs;
 
-pub fn day_one_solution() {
-    println!("Running day 1 solution!");
+pub fn day_one_part_one_solution() {
+    println!("Running day 1, part 1 solution!");
 
-    let contents = fs::read_to_string("./inputs/day-1-input");
+    let contents = fs::read_to_string("./inputs/day-1-part-1-input");
 
     let mut sum = 0;
 

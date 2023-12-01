@@ -1,7 +1,7 @@
-mod day_1_solution;
+mod day_1_part_1_solution;
 
 use std::env;
-use crate::day_1_solution::day_one_solution;
+use crate::day_1_part_1_solution::day_one_part_one_solution;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -10,7 +10,7 @@ fn main() {
     // dbg!(args);
 
     if args.len() != 2 {
-        println!("Incorrect command line arguments. Please supply only a target day in the format of 'day_'");
+        println!("Incorrect command line arguments. Please supply only a target day in the format of 'day_part_'");
         return;
     }
 
@@ -18,7 +18,7 @@ fn main() {
     // dbg!(day);
 
     match day.as_str(){
-        "day1"=>day_one_solution(),
+        "day1part1"=> day_one_part_one_solution(),
         _=>println!("No match for day provided.")
     }
 }
