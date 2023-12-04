@@ -2,7 +2,7 @@ use regex::Regex;
 use std::fs;
 
 pub fn day_two_part_two_solution() {
-    println!("Day 2 - Part 1");
+    println!("Day 2 - Part 2");
 
     let contents = fs::read_to_string("./inputs/day-2-input");
     let target_max = (13, 12, 14); //(green, red, blue)
