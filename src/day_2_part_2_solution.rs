@@ -5,7 +5,6 @@ pub fn day_two_part_two_solution() {
     println!("Day 2 - Part 2");
 
     let contents = fs::read_to_string("./inputs/day-2-input");
-    let target_max = (13, 12, 14); //(green, red, blue)
     let mut game_sum = 0;
 
     for line in contents.unwrap().lines() {
