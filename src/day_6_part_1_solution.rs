@@ -1,10 +1,9 @@
 use std::fs;
 
-pub fn day_five_part_one_solution() {
-    println!("Day 5 - Part 1");
+pub fn day_six_part_one_solution() {
+    println!("Day 6 - Part 1");
 
-
-    let contents = fs::read_to_string("./inputs/day-5-input").unwrap();
+    let contents = fs::read_to_string("./inputs/day-6-input").unwrap();
 
     let solutions_product = process_lines(contents);
     println!("Final product ===> {}", solutions_product);
