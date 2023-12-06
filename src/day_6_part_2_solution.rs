@@ -17,8 +17,6 @@ fn process_lines(contents: String) -> u32 {
 
     let time = parse_line(&times_line);
     let distance = parse_line(&distances_line);
-    dbg!(time);
-    dbg!(distance);
 
     let mut options_count = 0;
 
