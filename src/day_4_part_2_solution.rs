@@ -2,7 +2,7 @@ use std::fs;
 use regex::Regex;
 
 pub fn day_four_part_two_solution() {
-    println!("Day 4 - Part 1");
+    println!("Day 4 - Part 2");
 
     let contents = fs::read_to_string("./inputs/day-4-input").unwrap();
     let line_mapping: Vec<u32> = process_cards(&contents);
