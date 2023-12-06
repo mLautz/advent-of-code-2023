@@ -20,7 +20,6 @@ pub fn day_four_part_two_solution() {
 fn process_cards(content: &String) -> Vec<u32> {
     let mut line_mapping: Vec<u32> = Vec::new();
 
-    let mut line_count: u32 = 0;
     for line in content.lines() {
         let line_sans_card_num: Vec<&str> = line.split(&[':','|'][..]).collect();
 
@@ -51,7 +50,7 @@ fn evaluate_cards(line_mapping: &Vec<u32>, current_card: u32) ->  u32{
     let mut card_count = 1;
 
     let mut subsequent_card_index = 0;
-    (0..winning_count).collect::<Vec<u32>>().iter().for_each(|num| {
+    (0..winning_count).collect::<Vec<u32>>().iter().for_each(|_| {
         subsequent_card_index += 1;
         card_count += evaluate_cards(line_mapping, current_card + subsequent_card_index);
     });
