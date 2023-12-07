@@ -21,3 +21,4 @@ Cargo.lock
 # Added by me
 .idea
 /inputs
+.DS_Store
