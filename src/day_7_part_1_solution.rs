@@ -42,9 +42,6 @@ fn parse_hands(file_content: String) -> Vec<(String, u32, u32)> {
         let hand_string = line_split.get(0).unwrap().to_string();
         let bid_string = line_split.get(1).unwrap();
 
-        println!("Hand String: '{}'", hand_string);
-        println!("Bid String: '{}'", bid_string);
-
         let hand_type: u32 = determine_hand_type(&hand_string);
 
         card_hands.push((hand_string, hand_type, bid_string.parse::<u32>().unwrap()));
